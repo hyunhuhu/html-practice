@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> box </title>
+        <style>
+            *{
+                margin: 0; padding: 0;
+            }
+            .box{
+                width: 100%; /*%(비율) = 부모 기준에 따른 양
+                추가되는 요소를 포함하지 않으며, 넘치게 만들 수도 있음*/
+                padding: 10px;*/
+                height: 100px;
+                background-color: cadetblue;
+            }
+            .box2{
+                width: auto; /*%(비율) = 부모 기준에 따른 양
+                추가되는 요소를 함께 가져가며 폭값을 유지하기 위해 노력*/
+                padding: 10px;
+                height: 100px;
+                background-color: blueviolet;
+            }
+            #width{
+                width: 500px;
+                height: 250px;
+                border: 5px solid #000;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div id="width">
+        <div class="box">100%</div>
+        <div class="box2">auto</div>
+            </div>
+    </body>
+</html>

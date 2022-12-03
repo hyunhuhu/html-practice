@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caveat:wght@700&family=Pacifico&family=Ubuntu:ital,wght@0,500;0,700;1,300;1,400;1,700&display=swap');
+*{
+    padding: 0; margin: 0;font-family: 'Ubuntu', sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none; color: #333;
+}
+header{
+    width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px;
+}
+.logo{
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    line-height: 25px;
+    display: block;
+}
+header ul{
+    text-align: center;
+    display: inline-block;
+    overflow: hidden; 
+}
+header li{
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+header li img{
+    margin: 0 auto;
+}
+header li a{
+    font-weight: 800;
+    display: block;
+    padding-bottom: 6px;
+}
+header li:hover{
+    border-bottom: 2px solid #f00;
+}
+section{
+    width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#mainbg>.left{
+    width: 1274px;
+    float: left;
+}
+#mainbg>.right{
+    width: 316px;
+    float: right;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Keat </title>
+        <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            margin: 50px;
+        }
+        .box {
+            width: 300px;
+            height:100px;  
+            margin: 50px;
+            border:3px solid #000;
+        }
+        .inbox1 {
+            width: 100%;
+            height:100%; /*부모박스 100px맞춰 표현되어짐.*/
+            background-color: #f00;
+        }
+        .inbox2 {
+            width: auto;
+            height:auto;/*자식박스 50px맞춰  표현되어짐.*/
+            background-color: #f00;
+        }
+        p {
+          height:50px;
+        }
+        
+        </style>
+    </head>
+        
+    <body>
+        <h1>100%와 auto의 차이점 [height편]</h1>
+
+    <!--100%-->
+    <div class="box">
+        <div class="inbox1">
+            <p>부모 박스기준으로 꽉 차게 표현</p>
+        </div>
+    </div>
+
+    <!--auto-->
+    <div class="box">
+        <div class="inbox2">
+            <p>자식 박스기준으로 높이 표현 </p>
+        </div>
+    </div>
+    </body>
+</html>

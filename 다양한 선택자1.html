@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 선택자활용 </title>
+        <style>
+            div h1{
+                background-color: aquamarine;
+            }
+            
+            div>span{
+                background-color: brown;
+            }
+        
+            div>h2{
+                border: 2px solid #000;
+            }
+        
+            ul span{
+                background-color: chartreuse;
+            }
+        
+            h1+h2{
+                color: aqua;
+            }
+            
+            h1~h2{
+                background-color: chartreuse;
+            }
+        
+            h1:hover{
+                /*특정한 요소에 마우스를 올렸을 때*/
+                background-color: blueviolet;
+            }
+            
+            h2:active{
+                /*특정한 요소에 마우스로 클릭을 한순간*/
+                background-color: darkgreen;
+            }
+            
+            a:visited{
+                color: orange;
+            }
+            
+            a:link{
+                color: deeppink;
+            }
+            
+            
+            
+            
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        <!--후손선택자 & 자손선택자
+            후손선택자 : 해당요소의 하위요소에 있는 특정한 요소를 모두 선택 / 선택자A 선택자B - 띄어쓰기로 구분
+            자손선택자 : 해당요소의 바로 밑에 위치하는 특정한 요소를 선택 / 선택자A>선택자B - 부등호로 구분
+        
+        
+        <div>
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+            <div>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li><span>menu3</span></li>
+               </ul>
+            </div>
+            <h2>제목2</h2>
+            <span>span</span>
+        </div>  -->
+        
+        <!--동위선택자 : 동위관계에 있는 요소중에 해당요소보다 뒤에 존재하는 특정한 요소를 선택할때 사용
+                선택자A + 선택자B : 선택자A 바로 뒤에 위치하는 선택자B를 선택
+                선택자A ~ 선택자B : 선택자A  뒤에 위치하는 선택자B를 모두 선택-->
+        
+        <!--반응선택자 : 사용자가 마우스를 이용해서 혹은 특정한 행동(반응)을 취했을때 css속성을 지정할수 있는 선택자 
+                - 태그:hover 마우스를 올려놓으면 선택 
+                - 태그:active  마우스를 클릭하면 선택 
+                - 태그:visited 클릭하여 방문하였을 때 선택 
+                - 태그:link  방문하지 않은 링크 적용-->
+        
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <h2>제목2</h2>
+        <h2>제목2</h2>
+        <h2>제목2</h2>
+        <h2>제목2</h2>
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+        <a href="https://www.naver.com" target="_blank">www.naver.com</a> 
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+        <a href="index-2.html">실습2</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

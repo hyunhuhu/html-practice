@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> display </title>
+            <style>
+                *{
+                    padding: 0; margin: 0;
+                }
+                
+                div{
+                    background-color: bisque;
+                    width: 300px;
+                    height: 100px;
+                    margin: 50px; /*모든 css가 적용 - block*/
+                    display: inline;
+                }
+                
+                span{
+                    background-color: burlywood;
+                    width: 300px;
+                    height: 100px;
+                    margin: 50px; /*width, height, margin - top, bottom, 폭 - 적용되지 않음*/
+                    /*display: inline-block;*/
+                }
+        
+        </style>
+    </head>
+        
+    <body>
+        <!--display : 요소를 어떤 성격을 보여줄지 결정하는 속성
+                block : 박스처럼 쌓이는 성격 + 화면 전체의 폭을 사용하는 성격
+                div / h / p / table / ul / ol ...
+
+                inline : 글자와 같이 나열되는 성격 + 내용물에 따라 폭이 결정되는 성격
+                a , span, i, em...-->
+        
+        <div>block01</div>
+        <div>block02</div>
+        <div>block03</div>
+        
+        <span>inline01</span>
+        <span>inline02</span>
+        <span>inline03</span>
+        
+    </body>
+</html>

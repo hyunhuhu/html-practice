@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 박스,나열 </title>
+        <style>
+            /**{margin: 0; padding: 0;}*/
+            div{
+                width: 200px;
+                height: 200px;
+                border: 5px solid #000;
+                float: left; 
+                margin-right: 30px;
+            }
+            .boxr{
+                width: 200px;
+                height: 200px;
+                border: 5px solid #000;
+                float: left; /*옆의 박스에 영향을 주는 속성, 나열하고자 하는 박스 함께 나열값*/
+            }
+            .boxc{
+                width: 300px;
+                height: 300px;
+                margin: 0px;
+                clear: both;
+                margin-top: 30px;
+            }       
+            
+            #allbox{
+                float: none;
+                border: none;
+                margin: auto;
+                background-color: aquamarine;
+                width: 720px; /*w : (200*3=600) +b : (5*6=30*) + m : (30*3= 90)  = 720 */
+                height: 210px; /*h : 200 + 10*/
+            }
+            
+            .boxs{
+                padding: 20px;
+                margin: 10px;
+                /* box-sizing: border-box; /*패딩, 선을 폭값안에서 함께 표현*/
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!--float: 박스를 옆으로 나열 할 때 사용 / 떠다니는~ / 레이아웃을 나열하거나 형셩+삽화를 넣을때-->
+        <div id="allbox">
+        
+        <div>1</div>
+        <div>2</div>
+        <div class="boxr">3</div>
+        
+        
+        </div>
+        
+        
+        
+        <!--clear : float와 함께 사용, float 제거할때 주로사용
+                left좌측 나열 제거 /right우측 나열 제거 /both 양쪽 나열 제거
+        <div class="boxc">제거할꺼야</div> -->
+        
+        
+        <!--box-sizng : 박스의 크기를 어떤 것의 기준으로 계산할지 지정하는 속성-->
+        <div class="boxs">box-sizng</div>
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

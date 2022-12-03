@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> form </title>
+        <style>
+            input[type="text"]{
+                background-color: aquamarine;
+                border: 2px solid #000;
+            }
+        
+        
+        
+        
+        </style>
+    </head>
+    
+    <body>
+        <!--form - 웹페이지에서의 입력양식의 그룹 / 
+            원하는 정보를 연결하여 전달받기 위한 명확한 폼양식
+            ex) <form name="-------">
+            name - 폼의이름/식별하기 위한 이름을 지정
+            method - 폼을 서버로 전송할때 http메소드를 지정=전송방법
+            get - 주소표시줄에 사용자가 입력한 내용이 그대로 표시
+            post - 대부분이 사용하는 방식, 내부적으로 보이지 않게 전송
+            -->
+        <form>
+            <!--<label> 해당하는 폼요소의 설명에 해당하는 태그로 "글자와 같은 성격"을 가짐  
+                   <fieldset> 폼 태그 안에 관련 있는 폼요소(엘리먼트) 들을 그룹화할 때 사용
+                    <legend> fieldset안에서 사용, 폼그룹 요소에 대한 제목  
+                    :태그를 사용하여 그룹화한 폼 엘리먼트들을 목적에 맞게 이름을 지정 
+
+                    input 서식 type 속성 name 이름-->
+            <fieldset>
+            <legend>개인정보작성</legend>
+                <label>아이디</label>
+                <input type="text" name="id"/>
+            </fieldset>
+                <input type="password" name="pw">
+            
+            <br/>
+            <br/>
+            
+                <input type="tel" placeholder="010-0000-0000" name="tel">
+            
+            <br/>
+            <br/>
+              <!--다중선택-->
+                <input type="checkbox" name="ch">
+            
+             <br/>
+            <br/>
+                <!--단일선택-->
+                <input type="radio" name="r">
+            
+            <br/>
+            <br/>
+                <!--버튼- submit(제출,확인) / reset(회수,다시)-->
+                <input type="submit" name="su" value="확인하기">
+                <input type="submit" name="su" value="취소하기">
+            
+            
+             <br/><br/>
+               
+               <!---버튼태그. type="button일반버튼형태"--->
+               <button type="button">클릭</button>
+               <br/><br/>
+               
+               <!--설렉트박스 : 펼쳐진 상태에서 항목을 고르는 서식-->
+               <select>
+                        <option>항목1</option>
+                        <option>항목2</option>
+                        <option>항목3</option>
+                        <option>항목4</option>
+                        <option>항목5</option>
+               </select>
+               
+               
+               <br/> <br/> 
+               
+               
+               <!--많은 내용의 글을 넣을때 사용하는 태그-->
+               <textarea></textarea>
+               
+               
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </form>
+    </body>
+</html>

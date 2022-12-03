@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#top{
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 100px;
+    line-height: 50px;
+}
+#top>h4{
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+#top>p{
+    float: right;
+    font-size: 15px;
+    color: #777777;   
+}
+#first{
+    width: 1000px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 30px 0px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#left{
+    width: 400px;
+    margin-left: 30px;
+    float: left;
+    text-align: center;
+}
+#left span{
+    color: #009090;
+}
+#left td{
+    border: none;
+    height: 100px;
+}
+#right{
+    float: right;
+    width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-top: 3px solid #a2a2a2;
+}
+#right th, 
+#right td{
+    text-align: center;
+    height: 50px
+}
+#right th{
+    background-color: #efefef
+}
+.lef{
+    border-left: 0px;
+}
+.rig{
+    border-right: 0px;
+}
+#tab{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    height: 80px;
+}
+#tab th{
+    width: 500px;
+    font-size: 22px;
+    color: #8e8e8e;
+}
+#tab th:hover{
+    color: #009090;
+    border-bottom-color: #009090;
+}
+
+.bott{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    border-top: 3px solid #ccc;
+}
+.bott th{
+    font-size: 17px;
+    font-weight: 600;
+}
+.bott th,
+.bott td{
+    text-align: center;
+    height: 60px;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+}
+.bott button{
+    padding: 3px 7px;
+    background-color: #00b2b2;
+    font-size: 17px;
+    color: white;
+    border: none;
+}
+
+.bott button:active{
+    background-color: #5c5cff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

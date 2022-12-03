@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> position_실전레이아웃 </title>
+        <style>
+            *{padding: 0;  margin: 0;}
+            img{  display: block;}
+            body{ background-color: #808080;}
+            a{text-decoration: none;}
+            li{list-style: none;}
+            
+            #wrap{
+               width: 1600px; 
+               overflow: hidden;
+               margin: 0 auto;
+               position: relative;
+            }
+            
+            nav{
+                width: 200px; 
+                height: 100%;
+                position: fixed;  
+                background-color: #000;
+            }
+            
+            nav > h1 {
+              text-align:center;   
+              color:#ffd800;   
+              margin:50px 0px;    
+              line-height:30px;
+            }
+
+            .submenu {
+               width:100px;   
+               margin:0 auto;   
+               overflow:hidden;  
+               margin-bottom:20px;
+            }
+            .submenu > li {
+              line-height:20px;
+             }
+            .submenu > li a{
+                font-size:13px;
+                color:#ffffff;  
+             }
+            .submenu > li:nth-child(1) {
+              font-weight:900;  
+             }
+
+            .form {
+              width:120px;  
+              border:1px solid #333;  
+              height:30px;  
+              margin:0 auto;
+            }
+            .form input[type=text] {
+              width:80px;  
+              height:30px;  
+              border:none;  
+              background-color:#000;  
+              display:block;  
+              float:left;  
+            }
+            .form > img {
+              float:right;  
+              margin:7.5px;
+             }
+
+            
+            section{
+                 width: 1400px;  
+                height: 100%;  
+                position: relative;  
+                background-color: #ffb237;  
+                /* float: right; - 오른쪽으로 부터 정렬*/
+                top: 0;  
+                left: 200px;
+                overflow: hidden;  
+            }
+            
+            .main{
+                width: 1200px;  
+                overflow: hidden;  
+                position: relative;  
+                margin: 50px auto;   /*1400-1200=200/2 = 100*/
+                height: 399px;
+            }
+            
+            button{
+                width: 100px;  
+                height: 100px; 
+                background-color: #000;  
+                border: none;  
+                border-radius: 50%; 
+                color: #fff;
+                position: absolute; 
+                top: 50%; 
+                left: 50%; 
+                margin-left: -50px; 
+                margin-top: -50px;
+            }
+            
+            .banner{
+                width: 1160px;  /*img(250*4)=1000 + margin(좌우40*4)=160*/
+                overflow: hidden;  
+                margin: 30px auto;  
+            }
+            
+            .banner>img{
+              float: left;  
+              margin: 0 20px;  
+              margin-bottom: 40px;
+              box-shadow:3px 3px 10px #f49909;  
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        
+       <!--전체박스-->
+        <div id="wrap">
+            
+                <nav>
+                      <h1>1987<br /> DESIGN </h1>
+                                <ul class="submenu">
+                                    <li><a href="#">MEMER </a></li>
+                                    <li><a href="#">LOGIN</a></li>
+                                    <li><a href="#">JOIN US </a></li>
+                                    <li><a href="#">CART(0 ITEM)</a></li>
+                                    <li><a href="#">ORDER</a></li>
+                                    <li><a href="#">MY PAGE </a></li>
+                                </ul>
+                                <ul class="submenu">
+                                    <li><a href="#">CATEGORY  </a></li>
+                                    <li><a href="#">OUTER   </a></li>
+                                    <li><a href="#">TOP  </a></li>
+                                    <li><a href="#">BOTTOM  </a></li>
+                                    <li><a href="#">ACC  </a></li>
+                                    <li><a href="#">SALE   </a></li>
+                                    <li><a href="#">TODAY VIEW  </a></li>
+                                </ul>
+                                <ul class="submenu">
+                                    <li><a href="#">BOARD  </a></li>
+                                    <li><a href="#">NOTICE </a></li>
+                                    <li><a href="#">REVIEW  </a></li>
+                                    <li><a href="#">Q&#62;A </a></li>
+                                </ul>
+                                <div class="form">
+                                    <input type="text" name="" />
+                                     <img src="img/sch.jpg" alt="" />
+                                </div>
+                </nav>
+            
+                <section>
+                         <div class="main">
+                               <img src="img/main_pic.jpg"  alt="" />
+                              <button type="button">▶</button>
+                         </div>
+                    
+                        <div class="banner">
+                            <img src="img/bn1.jpg" alt="대체이미지" />  
+                            <img src="img/bn2.jpg" alt="대체이미지" />  
+                            <img src="img/bn3.jpg" alt="대체이미지" />  
+                            <img src="img/bn4.jpg" alt="대체이미지" />  
+                            <img src="img/bn5.jpg" alt="대체이미지" />  
+                            <img src="img/bn6.jpg" alt="대체이미지" />  
+                            <img src="img/bn7.jpg" alt="대체이미지" />  
+                            <img src="img/bn8.jpg" alt="대체이미지" />  
+                            <img src="img/bn9.jpg" alt="대체이미지" />  
+                            <img src="img/bn10.jpg" alt="대체이미지" />  
+                            <img src="img/bn11.jpg" alt="대체이미지" />  
+                            <img src="img/bn12.jpg" alt="대체이미지" />  
+                        </div>
+                    
+                    
+               </section>
+        </div>
+       <!--//전체박스-->
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

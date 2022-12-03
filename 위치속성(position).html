@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> position </title>
+        <style>
+            *{
+                padding: 0; margin: 0;
+            }
+            .p1{
+                width: 300px;
+                height: 300px;
+                background-color: bisque;
+                text-align: center;
+                line-height: 300px;
+                font-size: 30px;
+                position: fixed;
+                /*위치지정시 사용가능한 속성 - top , left, right, bottom
+                static - 기본값(위치의 영향을 전혀 받지 않음)
+                relative - 상대위치(박스가 나열되는 순서대로 위치가 지정 top, left)
+                absolute - 절대위치(html화면기준으로 위치가 지정 - 위치값 모두 적용)
+                                    부모가 존재할때 부모의 기준으로 위치가 지정
+                fixed - 고정위치(html화면 기준으로 위치가 지정 - 위치모두 적용)
+                                고정된 상태로 표현! - 메뉴 배너*/
+                bottom: 50px;
+                left: 50px;
+            }
+        
+            body{
+                height: 3000px;
+                background-color: burlywood;
+            }
+        
+            .pbox{
+                width: 200px;
+                height: 200px;
+                background-color: bisque;
+                text-align: center;
+                line-height: 200px;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+            .pbox:nth-child(1){
+                z-index: 3; /*위치의 우선순위를 변경하는 속성 1~9999*/
+            }
+            .pbox:nth-child(2){
+                background-color: coral;
+                position: absolute;
+                top: 60px;
+                left: 60px;
+                z-index: 4;
+            }
+            .pbox:nth-child(3){
+                background-color: chartreuse;
+                position: absolute;
+                top: 90px;
+                left: 90px;
+            }
+            .red{
+                width: 400px;
+                height: 200px;
+                background-color: crimson;
+                text-align: center;
+                position: relative;
+            }
+            #menu{
+                width: 100%;
+                height: 200px;
+                background-color: cornflowerblue;
+                text-align: center;
+                position: absolute;
+            }
+        
+        
+        
+        </style>
+    </head>
+    
+    <body>
+     <!--   
+        <h1>position</h1>
+        <p>요소를 특정한 위치로 지정하여 배치하는 속성 /
+                어떻게 위치할지 결정하는 속성</p>
+        <div class="p1">
+        position
+        </div>
+        -->
+        
+        <div id="menu">menu</div>
+        <!--위치값을 사용하는 방법-->
+        <div class="red">
+        <div class="pbox">box1</div>
+        <div class="pbox">box2</div>
+        <div class="pbox">box3</div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caveat:wght@700&family=Pacifico&family=Ubuntu:ital,wght@0,500;0,700;1,300;1,400;1,700&display=swap');
+*{padding: 0; margin: 0;
+    font-family: 'Ubuntu', sans-serif;}
+ul,ol{list-style: none;}
+a{text-decoration: none; color: #333;}
+img{display: block;}
+header{
+    width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+}
+.logo{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 900;
+    display: block;
+}
+header ul{
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+}
+header li{
+    float: left;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+header li img{
+    margin: 0 auto;
+}
+header li{
+    font-weight: 800;
+    display: block;
+    padding-bottom: 5px;
+}
+header li:hover{
+    border-bottom: 2px solid #f00;
+}
+section{
+    width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#mainbg>.left{
+    width: 1274px;
+    float: left;
+}
+#mainbg>.right{
+    width: 316px;
+    overflow: hidden;
+    float: right;
+}
+#mainbg .tbox{
+    width: 316px;
+    height: 160px;
+    border: 5px solid #000;
+    text-align: center;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-image: url(../images/box_bg.png);
+}
+#mainbg p{
+    font-size: 18px;
+}
+#mainbg h1{
+    margin: 15px 0px;
+}
+#mainbg .line{
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+}
+#section01{
+    margin-top: 30px;
+}
+#section01 .left{
+    width: 784px;
+    overflow: hidden;
+    float: left
+}
+#section01 .right{
+    width: 785px;
+    float: right;
+}
+#section01 .ibox{
+    width: 784px;
+    height: 481px;
+    background-color: #000;
+    margin-top: 30px;
+    overflow: hidden;
+}
+#section02 img{
+    margin-top: 30px;
+}
+
+footer{
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+footer .left{
+    width: 790px;
+    height: 500px;
+    background-image: url(../images/banner_bg.jpg);
+    background-size: 790px 500px;
+    float: left;
+}
+footer .right{
+    width: 800px;
+    float: right;
+    overflow: hidden;
+}
+footer .ibox{
+    width: 800px;
+    height: 340px;
+    background-color: #000;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+footer form{
+    width: 800px;
+    height: 150px;
+    background-color: aquamarine;
+    text-align: center;
+    overflow: hidden;
+}
+footer .center{
+    display: inline-block;
+    height: 40px;
+    margin: 55px 0px;
+}
+
+footer label{
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 800;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+footer input[type="email"]{
+    width: 250px;
+    height: 40px;
+    display: block;
+    float: left;
+    padding-left: 20px;
+    font-size: 18px;
+    border: none;
+    
+}
+footer button{
+    display: block;
+    float: left;
+    border: none;
+    padding: 0px 10px;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    background-color: #000;
+}
+
+.footerlogo{
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    clear: both;
+    padding: 30px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

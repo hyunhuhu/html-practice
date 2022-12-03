@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> overflow </title>
+        <style>
+            *{
+                margin: 0; padding: 0;
+            }
+            
+            
+            body{
+                /*1920*1080
+                background-color: bisque;
+                width: 2000px;
+                height: 1500px;
+                overflow-x: hidden;/*x축 (가로) 넘치는 내용물을 어떻게 보여질지 결정하는 속성*/
+                /*overflow-y: hidden; /*y축 (세로) 넘치는 내용물을 어떻게 보여질지 결정하는 속성*/
+            }
+            
+            .contents1{
+                width: 200px;
+                height: 200px;
+                border: 2px solid #000;
+                float: left;
+                margin: 10px;
+            }
+        
+            .contents2{
+                width: 200px;
+                height: 200px;
+                border: 2px solid #000;
+                float: left;
+                margin: 10px;
+            }
+        
+            .contents3{
+                width: 200px;
+                /*height: 200px;*/
+                border: 2px solid #000;
+                float: left;
+                margin: 10px;
+                overflow: hidden; /*영역을 벗어나는 부분을 보이지 않게 처리 - 
+                HEIGHT 존재하지 않게 높이를 대신 처리*/
+            }
+        
+            .contents4{
+                width: 200px;
+                height: 200px;
+                border: 2px solid #000;
+                float: left;
+                margin: 10px;
+                /*overflow: hidden; 폭값이 존재할때 내용물을 안보이게 처리*/
+                overflow: scroll; /*콘텐츠가 넘치는 경우 스크롤, 내용물이 넘치지 않아도 자동 스크롤*/
+            }
+            
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <!--overflow : 부모박스에서 내용물이 넘치는 경우 어떻게 보여질지 결정하는 속성-->
+        <div class="contents1">
+        <h4>콘텐츠양이 일정한 경우</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+        
+        </div>
+        
+        
+        <div class="contents2">
+        <h4>콘텐츠양의 양이 많거나 유동적인 경우 - 흘러넘침</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+        </div>
+        
+        
+        
+        <div class="contents3">
+        <h4>콘텐츠양의 양에 따라서 높이가 늘어나는 경우</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+        </div>
+        
+        
+        
+        <div class="contents4">
+        <h4>박스의 높이에 따라 콘텐츠가 안보이게 처리</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

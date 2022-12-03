@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> position응용 </title>
+        <style>
+            *{padding: 0; margin: 0;}
+            #wrap{
+                width: 600px;
+                height: 600px;
+                background-color: #d55bf2;
+                position: relative;
+                top: 100px;
+                left: 400px;
+            }
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: blanchedalmond;
+                text-align: center;
+                line-height: 200px;
+                font-size: 30px;
+                color: brown;
+                font-weight: 900;
+            }
+            .box:nth-child(1){
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .box:nth-child(2){
+                position: absolute;
+                top: 200px;
+                left: 200px;
+            }
+            .box:nth-child(3){
+                position: absolute;
+                top: 400px;
+                left: 400px;
+            }
+        
+        
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id="wrap">
+            <div class="box">포</div>
+            <div class="box">지</div>
+            <div class="box">션</div>
+        </div>
+        
+    </body>
+</html>

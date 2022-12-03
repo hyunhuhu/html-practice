@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> position정렬&레이아웃 응용 </title>
+        <style>
+            *{padding: 0; margin: 0;}
+            body{
+                height: 10000px;
+            }
+            #mainslide{
+                width: 100%;
+                height: 700px;
+                overflow: hidden;
+                background-image: url(img/bg.jpg);
+                background-size: cover;
+                position: relative;
+            }
+            #mainslide button{
+                width: 100px;
+                height: 100px;
+                background-color: rgba(255,255,255,0);
+                font-size: 30px;
+                color: white;
+                border: 1px solid #fff;
+            }
+            #mainslide button:nth-of-type(1){
+                position: absolute;
+                left: 30px;
+                top: 50%;/*버튼 왼쪽모서리가 기준이됨*/
+                margin-top: -50px;/*높이의 반만큼 되돌아가기*/
+            }
+            #mainslide button:nth-of-type(2){
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                margin-top: -50px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            h3{
+                margin: 20px 0px;
+            }
+            .title{
+                text-align: center;
+                width: 800px;
+                height: 200px;
+                
+                overflow: hidden;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                margin-top: -100px;
+                left: 50%;
+                margin-left: -400px;
+            }
+        
+            header{
+                width: 100%;
+                overflow: hidden;
+                background-color: rgba(107, 124, 255, 0.49);
+                text-align: center;
+                line-height: 100px;
+                color: white;
+                font-weight: 900;
+                font-size: 20px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <header>topmenu</header>
+        
+        <div id="mainslide">
+            <button type="button">◁</button>
+            <button type="button">▷</button>
+            
+            <div class="title">
+            <h1>Lorem Ipsum</h1>
+                <h3>What is Lorem Ipsum?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book. Lorem Ipsum is simply dummy text of the printing.</p>
+            
+            </div>
+        </div>
+    </body>
+</html>
